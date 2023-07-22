@@ -1,0 +1,171 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "Cesar dashboard"
+subtitle: "Raphael"
+# logo: "logo.png"
+logo: "assets/tools/spaceman.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+#footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: '<p>Cesar 2023 </p>'
+
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#1a45ba"
+    highlight-secondary: "#2c66c7"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#1a45ba"
+    highlight-secondary: "#2c66c7"
+    highlight-hover: "#5a95f5"
+    background: "#302f2f"
+    # background-image: "assets/tools/sunset.jpg"
+    card-background: "#424242"
+    # card-border: "25px"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-footer: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional message
+#message:
+  #url: https://b4bz.io
+ # style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  #title: "Demo !"
+  #icon: "fa fa-grin"
+  #content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Github"
+    icon: "fab fa-github"
+    url: "https://github.com/bastienwirtz/homer"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Wiki"
+    icon: "fas fa-book"
+    url: "https://www.wikipedia.org/"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Professor Messer"
+    icon: "fas fa-book"
+    url: "https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/"
+    target: "_blank" # optional html a tag target attribute
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  - name: "More"
+    icon: "fas fa-grin"
+    url: "#additional-page"
+    target: "_blank" # optional html a tag target attribute
+  # - name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page" :
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+
+
+
+services:
+
+  - name: "Media"
+    icon: "fas fa-images"
+    # logo: "assets/tools/media2.png"
+    items:
+      - name: "Jellyfin"
+        logo: "assets/tools/jellyfin.png"
+        # subtitle: "Media"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "http://192.168.5.104:8096/web/index.html"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Radarr"
+        logo: "assets/tools/Radarr.png"
+        # subtitle: "Media"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "https://192.168.5.9:8006"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Sonarr"
+        logo: "assets/tools/sonarr.png"
+        # subtitle: "Media"
+        # tag: "app"
+        url: "#"
+      - name: "Youtube"
+        logo: "assets/tools/youtube.png"
+        # subtitle: "Media"
+        # tag: "app"
+        url: "https://www.youtube.com/"
+        target: "_blank" # optional html a tag target attribute
+
+
+  - name: "Applications"
+    # icon: "fas fa-cloud"
+    logo: "assets/tools/apps.png"
+    items:
+      - name: "Proxmox72"
+        # logo: "assets/tools/proxmox.jpg"
+        logo: "assets/tools/proxmox.png"
+        # subtitle: "HyperVisor"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "https://192.168.5.9:8006"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Nextcloud"
+        logo: "assets/tools/nextcloud.png"
+        # subtitle: "Storage Drive"
+        # tag: "app"
+        url: "#"
+      - name: "Github"
+        logo: "assets/tools/gitblue.png"
+        # subtitle: "Storage Drive"
+        # tag: "app"
+        url: "https://github.com/cesarderio"
+        target: "_blank" # optional html a tag target attribute
+
+
+
+  - name: "Services"
+    # icon: "fas fa-cloud"
+    # logo: "assets/tools/gears.png"
+    logo: "assets/tools/sample2.png"
+    items:
+      - name: "Canvas"
+        logo: "assets/tools/canvas.png"
+        # subtitle: "Cloud Drive"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "https://canvas.instructure.com/courses/7139419/assignments/syllabus"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Remo"
+        logo: "assets/tools/remo.png"
+        # subtitle: "Cloud Drive"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "https://campus.codefellows.org/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGQ1OWZjYjdiNTNlMDAxODExZmU2YSIsIm5hbWUiOiJSYXBoYWVsIENob29rYWdpYW4iLCJjYXBhYmlsaXRpZXMiOlsicmVhZCJdLCJ0eXBlIjoidXNlciIsImlhdCI6MTY4NTY0OTk2Nn0.SRyO96ecdmETWn63GPjuwv0gVqUBEXFgjupJRxtMUTM"
+        target: "_blank" # optional html a tag target attribute
+      - name: "System"
+        # logo: "assets/tools/sample2.png"
+        logo: "assets/tools/gears.png"
+        # subtitle: "System"
+        # tag: "app"
+        url: "#"
