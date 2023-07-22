@@ -101,6 +101,7 @@ services:
         # subtitle: "Storage Drive"
         # tag: "app"
         url: "http://192.168.5.154/index.php/login"
+        target: "_blank" # optional html a tag target attribute
         # url: "#"
       - name: "Github"
         logo: "assets/tools/gitblue.png"
