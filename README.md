@@ -8,9 +8,9 @@
 </h1>
 
 <h4 align="center">
- A dead simple static <strong>HOM</strong>epage for your serv<strong>ER</strong> to keep your services on hand, from a simple <code>yaml</code> configuration file.
+ My take on the Homer homepage for your server to keep your services on hand, from a simple <code>yaml</code> configuration file. All credit goes to <a href="https://github.com/bastienwirtz/homer">bastien and the contributors</a>
 </h4>
-<p align="center"> 
+<p align="center">
   <a href="https://www.buymeacoffee.com/bastien" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 <p>
 <p align="center">
@@ -86,17 +86,16 @@ docker run -d \
 
 The container will run using a user uid and gid 1000. Add `--user <your-UID>:<your-GID>` to the docker command to adjust it. Make sure this match the ownership of your assets directory.
 
-**Environment variables:** 
+**Environment variables:**
 
-* **`INIT_ASSETS`** (default: `1`)
+- **`INIT_ASSETS`** (default: `1`)
 Install example configuration file & assets (favicons, ...) to help you get started.
 
-* **`SUBFOLDER`** (default: `null`)
-If you would like to host Homer in a subfolder, (ex: *http://my-domain/**homer***), set this to the subfolder path (ex `/homer`).
+- **`SUBFOLDER`** (default: `null`)
+If you would like to host Homer in a subfolder, (ex: *<http://my-domain/**homer>***), set this to the subfolder path (ex `/homer`).
 
-* **`PORT`** (default: `8080`)
+- **`PORT`** (default: `8080`)
 If you would like to change internal port of Homer from default `8080` to your port choice.
-
 
 #### With docker-compose
 
