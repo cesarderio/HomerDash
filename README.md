@@ -4,7 +4,7 @@
   alt="Homer's donut"
   src="https://raw.githubusercontent.com//bastienwirtz/homer/main/public/logo.png">
     <br/>
-    Homer
+    Cesar
 </h1>
 
 <h4 align="center">
@@ -41,7 +41,8 @@
 </p>
 
 <p align="center">
- <img src="https://raw.github.com/bastienwirtz/homer/main/docs/screenshot.png" width="100%">
+ <!-- <img src="https://raw.github.com/bastienwirtz/homer/main/docs/screenshot.png" width="100%"> -->
+ <img src="./public/assets/tools/homepg.png" width="100%">
 </p>
 
 ## Table of Contents
