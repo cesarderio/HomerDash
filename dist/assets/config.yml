@@ -85,7 +85,8 @@ links:
 services:
 
   - name: "Applications"
-    icon: "	fa fa-caret-square-o-right"
+    icon: "fa fa-cogs"
+    # icon: "fa fa-desktop"
     # logo: "assets/tools/apps.png"
     items:
       - name: "Proxmox72"
@@ -96,19 +97,27 @@ services:
         keywords: "self hosted reddit"
         url: "https://192.168.5.9:8006"
         target: "_blank" # optional html a tag target attribute
+      - name: "Proxmox74"
+        # logo: "assets/tools/proxmox.jpg"
+        logo: "assets/tools/proxmox.png"
+        # subtitle: "HyperVisor"
+        # tag: "app"
+        keywords: "self hosted reddit"
+        url: "https://192.168.5.6:8006"
+        target: "_blank" # optional html a tag target attribute
       - name: "Nextcloud"
         logo: "assets/tools/nextcloud.png"
         # subtitle: "Storage Drive"
         # tag: "app"
-        url: "http://192.168.5.4/index.php/login"
+        url: "http://192.168.5.171/index.php/login"
         target: "_blank" # optional html a tag target attribute
-        # url: "#"
-      - name: "Github"
-        logo: "assets/tools/gitblue.png"
+      - name: "TreuNas"
+        logo: "assets/tools/truenas.png"
         # subtitle: "Storage Drive"
         # tag: "app"
-        url: "https://github.com/cesarderio"
+        url: "http://192.168.5.190"
         target: "_blank" # optional html a tag target attribute
+
 
   - name: "Services"
     icon: "fa fa-cogs"
@@ -129,12 +138,18 @@ services:
         keywords: "self hosted reddit"
         url: "https://campus.codefellows.org/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGQ1OWZjYjdiNTNlMDAxODExZmU2YSIsIm5hbWUiOiJSYXBoYWVsIENob29rYWdpYW4iLCJjYXBhYmlsaXRpZXMiOlsicmVhZCJdLCJ0eXBlIjoidXNlciIsImlhdCI6MTY4NTY0OTk2Nn0.SRyO96ecdmETWn63GPjuwv0gVqUBEXFgjupJRxtMUTM"
         target: "_blank" # optional html a tag target attribute
+      - name: "Github"
+        logo: "assets/tools/gitblue.png"
+        # subtitle: "Storage Drive"
+        # tag: "app"
+        url: "https://github.com/cesarderio"
+        target: "_blank" # optional html a tag target attribute
       - name: "System"
         # logo: "assets/tools/sample2.png"
         logo: "assets/tools/gears.png"
         # subtitle: "System"
         # tag: "app"
-        url: "#"
+        url: "http://tplinkwifi.net/webpages/login.html"
 
   - name: "Media"
     icon: "fas fa-images"
