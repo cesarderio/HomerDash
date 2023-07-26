@@ -77,6 +77,7 @@ links:
   # - name: "another page!"
   #  icon: "fas fa-file-alt"
   #  url: "#additional-page" :
+  logo: "assets/tools/logo8.png"
 
 # Services
 # First level array represent a group.
