@@ -9,10 +9,8 @@ logo: "assets/tools/spaceman.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
-#footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
-footer: '<p>Cesar 2023 </p>'
+footer: '<p>Cesar 2023 <a href="https://github.com/cesarderio"><i class="fab fa-github-alt"></i></a></p>'
 
-# Optional theme customization
 theme: default
 colors:
   light:
@@ -67,117 +65,100 @@ links:
   - name: "Professor Messer"
     icon: "fas fa-book"
     url: "https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/"
-    target: "_blank" # optional html a tag target attribute
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  - name: "More"
+    target: "_blank"
+  - name: "Media"
     icon: "fas fa-grin"
     url: "#additional-page"
-    target: "_blank" # optional html a tag target attribute
+    target: "_blank"
   # - name: "another page!"
   #  icon: "fas fa-file-alt"
   #  url: "#additional-page" :
-  logo: "assets/tools/logo8.png"
-
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+  - name: ""
+    icon: "fa-solid fa-user-astronaut"
+    url: "https://chat.openai.com/"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Youtube"
+    icon: "fa-brands fa-youtube"
+    url: "https://www.youtube.com/"
+    target: "_blank"
 
 services:
-
   - name: "Applications"
-    icon: "fa fa-cogs"
-    # icon: "fa fa-desktop"
-    # logo: "assets/tools/apps.png"
+    # icon: "fa fa-cogs"
+    icon: "fa fa-desktop"
     items:
-      - name: "Proxmox72"
-        # logo: "assets/tools/proxmox.jpg"
+      - name: "Uptime Kuma"
+        logo: "assets/tools/kuma.png"
+        url: "https://kuma.cesar-group.net"
+        target: "_blank"
+      - name: "Proxmox"
         logo: "assets/tools/proxmox.png"
-        # subtitle: "HyperVisor"
-        # tag: "app"
         keywords: "self hosted reddit"
-        url: "https://192.168.5.9:8006"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Proxmox74"
-        # logo: "assets/tools/proxmox.jpg"
-        logo: "assets/tools/proxmox.png"
-        # subtitle: "HyperVisor"
-        # tag: "app"
-        keywords: "self hosted reddit"
-        url: "https://192.168.5.6:8006"
-        target: "_blank" # optional html a tag target attribute
+        url: "https://plex.cesar-group.net"
+        target: "_blank"
+      # - name: "Proxmox72"
+      #   logo: "assets/tools/proxmox.png"
+      #   keywords: "self hosted reddit"
+      #   url: "https://192.168.5.9:8006"
+      #   target: "_blank"
+      # - name: "Proxmox74"
+      #   logo: "assets/tools/proxmox.png"
+      #   keywords: "self hosted reddit"
+      #   url: "https://192.168.5.6:8006"
+      #   target: "_blank"
       - name: "Nextcloud"
         logo: "assets/tools/nextcloud.png"
-        # subtitle: "Storage Drive"
-        # tag: "app"
-        url: "http://192.168.5.171/index.php/login"
-        target: "_blank" # optional html a tag target attribute
-      - name: "TreuNas"
+        url: "https://nextcloud.cesar-group.net/index.php/login"
+        target: "_blank"
+      - name: "TrueNas"
         logo: "assets/tools/truenas.png"
-        # subtitle: "Storage Drive"
-        # tag: "app"
         url: "http://192.168.5.190"
-        target: "_blank" # optional html a tag target attribute
-
+        target: "_blank"
 
   - name: "Services"
     icon: "fa fa-cogs"
-    # logo: "assets/tools/gears.png"
-    # logo: "assets/tools/sample2.png"
     items:
       - name: "Canvas"
         logo: "assets/tools/canvas.png"
-        # subtitle: "Cloud Drive"
-        # tag: "app"
         keywords: "self hosted reddit"
         url: "https://canvas.instructure.com/courses/7139419/assignments/syllabus"
         target: "_blank" # optional html a tag target attribute
       - name: "Remo"
         logo: "assets/tools/remo.png"
-        # subtitle: "Cloud Drive"
-        # tag: "app"
-        keywords: "self hosted reddit"
         url: "https://campus.codefellows.org/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGQ1OWZjYjdiNTNlMDAxODExZmU2YSIsIm5hbWUiOiJSYXBoYWVsIENob29rYWdpYW4iLCJjYXBhYmlsaXRpZXMiOlsicmVhZCJdLCJ0eXBlIjoidXNlciIsImlhdCI6MTY4NTY0OTk2Nn0.SRyO96ecdmETWn63GPjuwv0gVqUBEXFgjupJRxtMUTM"
         target: "_blank" # optional html a tag target attribute
       - name: "Github"
         logo: "assets/tools/gitblue.png"
-        # subtitle: "Storage Drive"
-        # tag: "app"
         url: "https://github.com/cesarderio"
         target: "_blank" # optional html a tag target attribute
       - name: "System"
-        # logo: "assets/tools/sample2.png"
         logo: "assets/tools/gears.png"
-        # subtitle: "System"
-        # tag: "app"
         url: "http://tplinkwifi.net/webpages/login.html"
 
   - name: "Media"
     icon: "fas fa-images"
     # logo: "assets/tools/media2.png"
     items:
+      - name: "CasaOs"
+        logo: "assets/tools/casa.png"
+        keywords: "self hosted reddit"
+        url: "http://casa.cesar-group.net/#/login"
+        target: "_blank"
       - name: "Jellyfin"
         logo: "assets/tools/jellyfin.png"
-        # subtitle: "Media"
-        # tag: "app"
         keywords: "self hosted reddit"
         url: "http://192.168.5.104:8096/web/index.html"
-        target: "_blank" # optional html a tag target attribute
+        target: "_blank"
       - name: "Radarr"
         logo: "assets/tools/Radarr.png"
-        # subtitle: "Media"
-        # tag: "app"
         keywords: "self hosted reddit"
         url: "https://192.168.5.9:8006"
-        target: "_blank" # optional html a tag target attribute
+        target: "_blank"
       - name: "Sonarr"
         logo: "assets/tools/sonarr.png"
-        # subtitle: "Media"
-        # tag: "app"
         url: "#"
-      - name: "Youtube"
-        logo: "assets/tools/youtube.png"
-        # subtitle: "Media"
-        # tag: "app"
-        url: "https://www.youtube.com/"
-        target: "_blank" # optional html a tag target attribute
+        target: "_blank"
+      # - name: "Youtube"
+      #   logo: "assets/tools/youtube.png"
+      #   url: "https://www.youtube.com/"
+      #   target: "_blank" 
