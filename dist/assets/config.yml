@@ -94,7 +94,7 @@ services:
       - name: "Proxmox"
         logo: "assets/tools/proxmox.png"
         keywords: "self hosted reddit"
-        url: "https://plex.cesar-group.net"
+        url: "https://192.168.5.6:8006"
         target: "_blank"
       # - name: "Proxmox72"
       #   logo: "assets/tools/proxmox.png"
