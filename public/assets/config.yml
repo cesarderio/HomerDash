@@ -17,18 +17,20 @@ colors:
     highlight-primary: "#1a45ba"
     highlight-secondary: "#2c66c7"
     highlight-hover: "#5a95f5"
-    background: "#f5f5f5"
-    card-background: "#ffffff"
-    text: "#363636"
+    background: "#0291de"
+    # background: "#f5f5f5"
+    card-background: "#424242"
+    # text: "#363636"
+    text: "#eaeaea"
     text-header: "#ffffff"
-    text-title: "#303030"
-    text-subtitle: "#424242"
+    text-title: "#ffffff"
+    text-subtitle: "#eaeaea"
     card-shadow: rgba(0, 0, 0, 0.1)
     link: "#3273dc"
     link-hover: "#363636"
   dark:
-    highlight-primary: "#1a45ba"
-    highlight-secondary: "#2c66c7"
+    highlight-primary: "#191a1f"
+    highlight-secondary: "#1e1f21"
     highlight-hover: "#5a95f5"
     background: "#302f2f"
     # background-image: "assets/tools/sunset.jpg"
@@ -58,14 +60,17 @@ links:
     icon: "fab fa-github"
     url: "https://github.com/bastienwirtz/homer"
     target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Professor Messer"
-    icon: "fas fa-book"
-    url: "https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/"
-    target: "_blank"
+    
+  # - name: "Wiki"
+  #   icon: "fas fa-book"
+  #   url: "https://www.wikipedia.org/"
+  #   target: "_blank" # optional html a tag target attribute
+
+  # - name: "Professor Messer"
+  #   icon: "fas fa-book"
+  #   url: "https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/"
+  #   target: "_blank"
+
   - name: "Media"
     icon: "fas fa-grin"
     url: "#additional-page"
@@ -73,91 +78,131 @@ links:
   # - name: "another page!"
   #  icon: "fas fa-file-alt"
   #  url: "#additional-page" :
-  - name: ""
-    icon: "fa-solid fa-user-astronaut"
-    url: "https://chat.openai.com/"
-    target: "_blank" # optional html a tag target attribute
+
   - name: "Youtube"
     icon: "fa-brands fa-youtube"
     url: "https://www.youtube.com/"
     target: "_blank"
+  
+  - name: ""
+    icon: "fa-solid fa-user-astronaut"
+    url: "https://chat.openai.com/"
+    target: "_blank" # optional html a tag target attribute
+
 
 services:
-  - name: "Applications"
+  - name: "Systems"
     # icon: "fa fa-cogs"
     icon: "fa fa-desktop"
     items:
-      - name: "Uptime Kuma"
-        logo: "assets/tools/kuma.png"
-        url: "http://192.168.5.164:3001"
+      - name: "CasaOs"
+        logo: "assets/tools/casa.png"
+        keywords: "self hosted reddit"
+        url: "http://192.168.5.241:81/"
         target: "_blank"
+
+      - name: "Nextcloud"
+        logo: "assets/tools/nextcloud.png"
+        url: "http://192.168.5.123/index.php/login"
+        target: "_blank"
+
+      - name: "Portainer"
+        logo: "assets/tools/portain.png"
+        keywords: "self hosted reddit"
+        url: "https://192.168.5.241:9443/"
+        target: "_blank"
+        
       - name: "Proxmox"
         logo: "assets/tools/proxmox.png"
         keywords: "self hosted reddit"
         url: "https://192.168.5.6:8006"
         target: "_blank"
-      # - name: "Proxmox72"
-      #   logo: "assets/tools/proxmox.png"
-      #   keywords: "self hosted reddit"
-      #   url: "https://192.168.5.9:8006"
-      #   target: "_blank"
-      # - name: "Proxmox74"
-      #   logo: "assets/tools/proxmox.png"
-      #   keywords: "self hosted reddit"
-      #   url: "https://192.168.5.6:8006"
-      #   target: "_blank"
-      - name: "Nextcloud"
-        logo: "assets/tools/nextcloud.png"
-        url: "http://192.168.5.123/index.php/login"
-        target: "_blank"
-      - name: "TrueNas"
-        logo: "assets/tools/truenas.png"
-        url: "http://192.168.5.190"
-        target: "_blank"
+
 
   - name: "Services"
     icon: "fa fa-cogs"
+    items:
+
+      # - name: "Grav"
+      #   logo: "assets/tools/grav.png"
+      #   url: "http://192.168.5.241:82/"
+      #   target: "_blank"
+
+      - name: "Pi-Hole"
+        logo: "assets/tools/Pi-hole.png"
+        keywords: "self hosted reddit"
+        url: "http://192.168.5.241:8800/admin/"
+        target: "_blank"
+
+      - name: "Router"
+        logo: "assets/tools/gears.png"
+        url: "http://192.168.5.1"
+        target: "_blank"
+
+      - name: "Uptime Kuma"
+        logo: "assets/tools/kuma.png"
+        url: "http://192.168.5.241:3001/"
+        target: "_blank"
+
+      - name: "VScode Server"
+        logo: "assets/tools/vscode.png"
+        keywords: "self hosted reddit"
+        url: "http://192.168.5.241:8443/"
+        target: "_blank"
+
+
+  - name: "Media"
+    icon: "fas fa-images"
+    # logo: "assets/tools/media2.png"
     items:
       - name: "Canvas"
         logo: "assets/tools/canvas.png"
         keywords: "self hosted reddit"
         url: "https://canvas.instructure.com/courses/7139419/assignments/syllabus"
         target: "_blank" # optional html a tag target attribute
-      - name: "Remo"
-        logo: "assets/tools/remo.png"
-        url: "https://campus.codefellows.org/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGQ1OWZjYjdiNTNlMDAxODExZmU2YSIsIm5hbWUiOiJSYXBoYWVsIENob29rYWdpYW4iLCJjYXBhYmlsaXRpZXMiOlsicmVhZCJdLCJ0eXBlIjoidXNlciIsImlhdCI6MTY4NTY0OTk2Nn0.SRyO96ecdmETWn63GPjuwv0gVqUBEXFgjupJRxtMUTM"
-        target: "_blank" # optional html a tag target attribute
+
       - name: "Github"
         logo: "assets/tools/gitblue.png"
         url: "https://github.com/cesarderio"
         target: "_blank" # optional html a tag target attribute
-      - name: "System"
-        logo: "assets/tools/gears.png"
-        url: "http://tplinkwifi.net/webpages/login.html"
 
+      - name: "Remo"
+        logo: "assets/tools/remo.png"
+        url: "https://campus.codefellows.org/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGQ1OWZjYjdiNTNlMDAxODExZmU2YSIsIm5hbWUiOiJSYXBoYWVsIENob29rYWdpYW4iLCJjYXBhYmlsaXRpZXMiOlsicmVhZCJdLCJ0eXBlIjoidXNlciIsImlhdCI6MTY4NTY0OTk2Nn0.SRyO96ecdmETWn63GPjuwv0gVqUBEXFgjupJRxtMUTM"
+        target: "_blank" # optional html a tag target attribute
+
+        
   - name: "Media"
     icon: "fas fa-images"
     # logo: "assets/tools/media2.png"
     items:
-      - name: "CasaOs"
-        logo: "assets/tools/casa.png"
-        keywords: "self hosted reddit"
-        url: "http://192.168.5.164:81/#/login"
+      - name: "Disney Plus"
+        logo: "assets/tools/disney.png"
+        url: "https://www.disneyplus.com/home"
         target: "_blank"
-      - name: "Jellyfin"
-        logo: "assets/tools/jellyfin.png"
-        keywords: "self hosted reddit"
-        url: "http://192.168.5.104:8096/web/index.html"
+
+      - name: "Prime Video"
+        logo: "assets/tools/prime.png"
+        url: "https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011"
         target: "_blank"
-      - name: "Radarr"
-        logo: "assets/tools/Radarr.png"
-        keywords: "self hosted reddit"
-        url: "https://192.168.5.9:8006"
-        target: "_blank"
-      - name: "Sonarr"
-        logo: "assets/tools/sonarr.png"
-        url: "#"
-        target: "_blank"
+
+      # - name: "Jellyfin"
+      #   logo: "assets/tools/jellyfin.png"
+      #   keywords: "self hosted reddit"
+      #   url: "http://192.168.5.104:8096/web/index.html"
+      #   target: "_blank"
+
+      # - name: "Radarr"
+      #   logo: "assets/tools/Radarr.png"
+      #   keywords: "self hosted reddit"
+      #   url: "https://192.168.5.9:8006"
+      #   target: "_blank"
+
+      # - name: "Sonarr"
+      #   logo: "assets/tools/sonarr.png"
+      #   url: "#"
+      #   target: "_blank"
+
       # - name: "Youtube"
       #   logo: "assets/tools/youtube.png"
       #   url: "https://www.youtube.com/"

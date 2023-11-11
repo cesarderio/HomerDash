@@ -47,14 +47,14 @@
           :defaultValue="this.config.defaults.layout == 'columns'"
         />
 
-        <SearchInput
+        <!-- <SearchInput
           class="navbar-item is-inline-block-mobile"
           :hotkey="searchHotkey()"
           @input="filterServices($event.target?.value)"
           @search-focus="showMenu = true"
           @search-open="navigateToFirstService($event?.target?.value)"
           @search-cancel="filterServices()"
-        />
+        /> -->
       </Navbar>
     </div>
 
